@@ -1,0 +1,9 @@
+{
+  "id": "jsonview.csharp",
+  "name": "JSON 转 C# 实体类",
+  "version": "1.0.0",
+  "description": "支持两种 JSON 库、Pascal Case、可空类型、Record 与只读列表。",
+  "contractVersion": 1,
+  "assembly": "JsonView.CSharp.dll",
+  "type": "JsonView.CSharp.CSharpPlugin"
+}

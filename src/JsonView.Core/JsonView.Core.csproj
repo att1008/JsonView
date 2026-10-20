@@ -1,0 +1,4 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <ItemGroup><PackageReference Include="Newtonsoft.Json" Version="13.0.4" /></ItemGroup>
+  <ItemGroup><Reference Include="System.Numerics" /></ItemGroup>
+</Project>

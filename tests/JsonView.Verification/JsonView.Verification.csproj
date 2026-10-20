@@ -1,0 +1,8 @@
+<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+  <PropertyGroup><UseWPF>true</UseWPF><OutputType>Exe</OutputType></PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="../../src/JsonView/JsonView.csproj" />
+    <ProjectReference Include="../../src/JsonView.CSharp/JsonView.CSharp.csproj" />
+    <PackageReference Include="System.Text.Json" Version="10.0.12" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+  <PropertyGroup><UseWPF>true</UseWPF><OutputType>WinExe</OutputType><AssemblyName>JsonView</AssemblyName></PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="../JsonView.Core/JsonView.Core.csproj" />
+    <ProjectReference Include="../JsonView.Contracts/JsonView.Contracts.csproj" />
+    <ProjectReference Include="../JsonView.CSharp/JsonView.CSharp.csproj" ReferenceOutputAssembly="false" />
+    <PackageReference Include="AvalonEdit" Version="6.3.1.120" />
+    <Content Include="../../THIRD-PARTY-NOTICES.md" Link="THIRD-PARTY-NOTICES.md" CopyToOutputDirectory="PreserveNewest" />
+    <Content Include="../../licenses/*.txt" Link="licenses/%(Filename)%(Extension)" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+  <Target Name="CopyDefaultPlugin" AfterTargets="Build">
+    <ItemGroup><PluginFiles Include="../JsonView.CSharp/bin/$(Configuration)/net472/JsonView.CSharp.dll;../JsonView.CSharp/plugin.json" /></ItemGroup>
+    <Copy SourceFiles="@(PluginFiles)" DestinationFolder="$(TargetDir)Plugins/CSharp" />
+  </Target>
+</Project>

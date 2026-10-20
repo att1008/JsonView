@@ -1,0 +1,9 @@
+<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+  <PropertyGroup><UseWPF>true</UseWPF></PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System.Numerics" />
+    <ProjectReference Include="../JsonView.Core/JsonView.Core.csproj" />
+    <ProjectReference Include="../JsonView.Contracts/JsonView.Contracts.csproj" />
+    <PackageReference Include="AvalonEdit" Version="6.3.1.120" />
+  </ItemGroup>
+</Project>
