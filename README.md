@@ -112,4 +112,4 @@ dotnet build JsonView.sln -c Release
 
 ## 许可证
 
-本项目暂未指定开源许可证。第三方组件的许可证与版权声明见 [THIRD-PARTY-NOTICES.md](THIRD-PARTY-NOTICES.md)。
+本项目暂未指定开源许可证。第三方组件的许可证与版权声明见 [licenses](licenses)。

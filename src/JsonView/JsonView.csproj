@@ -5,7 +5,6 @@
     <ProjectReference Include="../JsonView.Contracts/JsonView.Contracts.csproj" />
     <ProjectReference Include="../JsonView.CSharp/JsonView.CSharp.csproj" ReferenceOutputAssembly="false" />
     <PackageReference Include="AvalonEdit" Version="6.3.1.120" />
-    <Content Include="../../THIRD-PARTY-NOTICES.md" Link="THIRD-PARTY-NOTICES.md" CopyToOutputDirectory="PreserveNewest" />
     <Content Include="../../licenses/*.txt" Link="licenses/%(Filename)%(Extension)" CopyToOutputDirectory="PreserveNewest" />
   </ItemGroup>
   <Target Name="CopyDefaultPlugin" AfterTargets="Build">
